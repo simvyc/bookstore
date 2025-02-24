@@ -28,7 +28,6 @@ A minimal Enterprise Resource Planning (ERP) system for managing a bookstore's w
 
 - **Frontend:**  
   - [React](https://reactjs.org/)  
-  - [Create React App](https://create-react-app.dev/) (for bootstrapping the React project)  
   - [React Bootstrap](https://react-bootstrap.github.io/) (optional, for additional UI components)
 
 - **Database:**  
