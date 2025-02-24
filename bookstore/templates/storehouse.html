@@ -1,0 +1,37 @@
+{% extends 'home.html' %}
+{% block content %}
+<div class="mt-4">
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead class="table-secondary table-bordered table-light">
+                <tr>
+                    <th>Book Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Summary</th>
+                    <th>Created Date</th>
+                    <th>Modified Date</th>
+                    <th>User</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for book in books %}
+                <tr>
+                    <td>{{ book.book_title }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.ISBN }}</td>
+                    <td>{{ book.category }}</td>
+                    <td>{{ book.quantity }}</td>
+                    <td>{{ book.summary }}</td>
+                    <td>{{ book.created_date }}</td>
+                    <td>{{ book.modified_date }}</td>
+                    <td>{{ book.user }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
